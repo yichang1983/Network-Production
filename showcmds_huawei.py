@@ -14,6 +14,8 @@ else:
     output3 = device.send_command("display health")
     output4 = device.send_command("display ip interface brief")
     output5 = device.send_command("display interface description")
+
+    print("\n")                    #\n 印出結果後，空一行，感覺才不會跟下一個執行結果擠在一起。
     print("display version:\n")    #\n 空下一行的意思
     print(output1)
     print("\n")                    #\n 印出結果後，空一行，感覺才不會跟下一個執行結果擠在一起。
@@ -36,16 +38,3 @@ else:
 finally:
     print("****************************************************************************************************")
     print("Close")
-
-
-
-
-
-
-
-
-
-
-
-
-
