@@ -14,20 +14,27 @@ else:
     output3 = device.send_command("show environment all")
     output4 = device.send_command("show ip int brief")
     output5 = device.send_command("show int description")
+
+    print("\n")                    #\n 印出結果後，空一行，感覺才不會跟下一個執行結果擠在一起。
     print("show version:\n")    #\n 空下一行的意思
     print(output1)
+    print("\n")                    #\n 印出結果後，空一行，感覺才不會跟下一個執行結果擠在一起。
     print("****************************************************************************************************")
     print("show clock:\n")
     print(output2)
+    print("\n")                    #\n 印出結果後，空一行，感覺才不會跟下一個執行結果擠在一起。
     print("****************************************************************************************************")
     print("show environment all:\n")
     print(output3)
+    print("\n")                    #\n 印出結果後，空一行，感覺才不會跟下一個執行結果擠在一起。
     print("****************************************************************************************************")
     print("show ip int brief:\n")
     print(output4)
+    print("\n")                    #\n 印出結果後，空一行，感覺才不會跟下一個執行結果擠在一起。
     print("****************************************************************************************************")
     print ("show int description:\n")
     print(output5)
+    print("\n")                    #\n 印出結果後，空一行，感覺才不會跟下一個執行結果擠在一起。
 finally:
     print("****************************************************************************************************")
     print("Close")
