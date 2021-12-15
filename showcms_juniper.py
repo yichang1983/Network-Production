@@ -6,7 +6,7 @@ try:
     username = input("username: ")
     device = ConnectHandler(device_type='juniper', ip=ipaddress,  username=username, password=getpass())
 except Exception as E:                  #Exception as E 就是截取全部的錯誤，把它當成E
-    print("Error =", E)                 #印出 E(錯誤的訊息)
+    print("Issue: ", E)                 #印出 E(錯誤的訊息)
 
 else:
     output1 = device.send_command("show version | match model")
